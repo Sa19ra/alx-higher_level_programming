@@ -1,14 +1,13 @@
 #include "lists.h"
 
 /**
- * insert_node - Incorporates a given numeric
- *               value into a sorted singly-linked list.
- * @head: A reference to the initial node of the linked list.
- * @number: The numeric value to be added.
- * Return: Returns NULL in case of failure;
- *         otherwise, returns a pointer to the newly inserted node.
+ * insert_node - Inserts a number into a sorted singly-linked list.
+ * @head: A pointer the head of the linked list.
+ * @number: The number to insert.
+ *
+ * Return: If the function fails - NULL.
+ *         Otherwise - a pointer to the new node.
  */
-
 listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *node = *head, *new;
